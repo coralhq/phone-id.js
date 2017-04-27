@@ -1,5 +1,7 @@
 # phone-id.js
 
+[![Build Status](https://travis-ci.org/coralhq/phone-id.js.svg?branch=master)](https://travis-ci.org/coralhq/phone-id.js)
+
 A library to generate Indonesian phone numbers. Numbers may or may not be valid.
 
 ## Generating Phone Numbers
