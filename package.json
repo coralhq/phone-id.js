@@ -1,0 +1,29 @@
+{
+  "name": "phone-id.js",
+  "version": "0.1.0",
+  "description": "A library to generate Indonesian phone numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coralhq/phone-id.js.git"
+  },
+  "keywords": [
+    "phone-number",
+    "indonesia",
+    "testing-tools",
+    "fixture-data"
+  ],
+  "author": "Batista Harahap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coralhq/phone-id.js/issues"
+  },
+  "homepage": "https://github.com/coralhq/phone-id.js#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
