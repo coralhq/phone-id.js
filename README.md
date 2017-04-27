@@ -5,7 +5,7 @@ A library to generate Indonesian phone numbers. Numbers may or may not be valid.
 ## Generating Phone Numbers
 
 ```javascript
-const phoneid = require('phoneid')
+const phoneid = require('phone-id.js')
 
 // Any operator
 number = phoneid.anything(8, false)
