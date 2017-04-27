@@ -12,22 +12,6 @@ const
   XL_PREFIXES         = require('./xl')
 
 let phoneid = {
-  anything: (length, international_prefix) => {
-    const prefixes = [
-      ...AXIS_PREFIXES,
-      ...BYRU_PREFIXES,
-      ...INDOSAT_PREFIXES,
-      ...LIPPO_PREFIXES,
-      ...SAMPOERNA_PREFIXES,
-      ...SMARTFREN_PREFIXES,
-      ...TELKOMSEL_PREFIXES,
-      ...THREE_PREFIXES,
-      ...XL_PREFIXES
-    ]
-
-    return this.generatePhoneNumber(prefixes, length, international_prefix)
-  },
-
   generatePhoneNumber: (prefixes, length=8, international_prefix=false) => {
     const randomIndex = Math.floor(Math.random() * prefixes.length)
     const prefix = prefixes[randomIndex]
@@ -44,6 +28,22 @@ let phoneid = {
 
     return (String) (intl + prefix + number)
   }
+}
+
+phoneid.anything = (length, international_prefix) => {
+  const prefixes = [
+    ...AXIS_PREFIXES,
+    ...BYRU_PREFIXES,
+    ...INDOSAT_PREFIXES,
+    ...LIPPO_PREFIXES,
+    ...SAMPOERNA_PREFIXES,
+    ...SMARTFREN_PREFIXES,
+    ...TELKOMSEL_PREFIXES,
+    ...THREE_PREFIXES,
+    ...XL_PREFIXES
+  ]
+
+  return phoneid.generatePhoneNumber(prefixes, length, international_prefix)
 }
 
 const generateEachOperatorGenerator = (prefixes, phoneid) => {
